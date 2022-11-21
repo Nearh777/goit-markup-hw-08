@@ -476,10 +476,18 @@ section {
   outline: transparent;
 }
 
+.contacts__email {
+  gap: 10px;
+}
+
 .contacts-email-icon {
   align-items: center;
   justify-content: center;
   fill: currentColor;
+}
+
+.contacts__tel {
+  gap: 10px;
 }
 
 .contacts-tel-icon {
