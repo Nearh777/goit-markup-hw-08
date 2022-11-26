@@ -1,14 +1,12 @@
-.cardlist {
+.feature {
   padding-top: 94px;
   padding-bottom: 94px;
   text-align: center;
 }
 
-.cardlist__list {
+.cardlist {
   display: flex;
-  & .item + .item {
-    margin-left: 30px;
-  }
+  gap: 30px;
   & .title {
     margin-bottom: 10px;
     font-weight: 700;
@@ -19,11 +17,6 @@
   
     color: var(--primary-text-color);
   }
-  & .item {
-    width: 270px;
-    text-align: left;
-  }
-  
   & .text {
     font-size: 14px;
     line-height: 1.7;
@@ -32,7 +25,11 @@
   }
   
 }
-.cardlist__icon-item {
+.cardlist__item {
+  width: 270px;
+  text-align: left;
+}
+.cardlist__picture {
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -43,7 +40,7 @@
 
   background-color: #f5f4fa;
 }
-.cardlist__icon-img {
+.cardlist__icon {
   align-items: center;
   justify-content: center;
 }

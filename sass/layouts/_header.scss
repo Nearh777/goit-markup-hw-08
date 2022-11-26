@@ -36,9 +36,10 @@
   & .item + .item {
     margin-left: 50px;
   }
+  gap: 50px;
 }
 
-.menu__list .link {
+.menu__link {
   padding-top: 25px;
   padding-bottom: 25px;
   color: var(--primary-text-color);
@@ -82,13 +83,10 @@
 .contacts__list {
   display: flex;
   margin-left: auto;
-  & .item + .item {
-    margin-left: 50px;
-    gap: 10px;
-  }
+  gap: 30px;
 }
 
-.contacts__list .link {
+.contacts__link {
   display: flex;
   margin-left: auto;
   padding-top: 25px;
@@ -106,11 +104,9 @@
     color: var(--accent-color);
     outline: transparent;
   }
-}
-
-.contacts__email {
   gap: 10px;
 }
+
 
 .contacts-email-icon {
   align-items: center;
@@ -118,9 +114,7 @@
   fill: currentColor;
 }
 
-.contacts__tel {
-  gap: 10px;
-}
+
 
 .contacts-tel-icon {
   align-items: center;

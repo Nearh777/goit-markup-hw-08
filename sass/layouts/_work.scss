@@ -45,11 +45,6 @@
   position: relative;
   transition: box-shadow var(--trans);
   overflow: hidden;
-  .work-link:hover &,
-.work-link:focus & {
-  transform: translateY(0);
-  transition: transform var(--trans);
-}
 }
 
 .work-img {
@@ -84,6 +79,11 @@
   transform: translateY(100%);
   transition: var(--trans), color var(--trans), background-color var(--trans);
   overflow: auto;
+  .work-link:hover &,
+  .work-link:focus & {
+    transform: translateY(0);
+    transition: transform var(--trans);
+  }
 }
 
 .work-card {
