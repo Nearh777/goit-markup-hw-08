@@ -1,12 +1,17 @@
 .feature {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   text-align: center;
+  @media  screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .cardlist {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
   & .title {
     margin-bottom: 10px;
     font-weight: 700;
@@ -14,6 +19,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    
   
     color: var(--primary-text-color);
   }
@@ -26,15 +32,25 @@
   
 }
 .cardlist__item {
-  width: 270px;
+  width: 100%;
   text-align: left;
+  @media screen and (min-width: 758px) {
+    width: calc((100% - 30px) / 2);
+    }
+  @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
+      }
 }
 .cardlist__picture {
-  height: 120px;
+  //height: 120px;
+  display: block;
   border-radius: 4px;
   margin-bottom: 30px;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
   gap: 30px;
-  display: flex;
+  //display: flex;
   align-items: center;
   justify-content: center;
 
