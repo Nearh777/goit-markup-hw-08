@@ -5,3 +5,12 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  @media  screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}

@@ -1,12 +1,12 @@
-.customers {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #f5f4fa;
-  @media  screen and (min-width: 1200px) {
-    padding-top: 94px;
-  padding-bottom: 94px;
-  }
-}
+//.customers {
+//  padding-top: 60px;
+//  padding-bottom: 60px;
+//  background-color: #f5f4fa;
+//  @include desktop {
+//    padding-top: 94px;
+//  padding-bottom: 94px;
+//  }
+//}
 
 .customers-list {
   display: flex;
@@ -17,10 +17,10 @@
 .customers-item {
   height: 90px;
   width: calc((100% - 30px) / 2);
-  @media screen and (min-width: 758px) {
+  @include tablet {
     width: calc((100% - 90px) / 3);
     }
-  @media screen and (min-width: 1200px) {
+    @include desktop {
       width: calc((100% - 150px) / 6);
       }
   
