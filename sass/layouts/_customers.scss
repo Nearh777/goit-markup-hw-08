@@ -9,14 +9,16 @@
 //}
 
 .customers-list {
+  
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
 }
 
 .customers-item {
+  
   height: 90px;
-  width: calc((100% - 30px) / 2);
+  @include calculation(2, 30px);
   @include tablet {
     width: calc((100% - 90px) / 3);
     }

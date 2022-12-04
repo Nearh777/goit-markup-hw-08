@@ -99,7 +99,9 @@
                 </svg>
               </div>
               <h3 class="cardlist__title">Планування</h3>
-              <p class="cardlist__text">Так само консультація з широким активом значною мірою зумовлює.</p>
+              <p class="cardlist__text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
             </li>
             <li class="cardlist__item">
               <div class="cardlist__picture">
@@ -116,7 +118,7 @@
         </div>
       </section>
       <!-- Job -->
-      <!--<section class="job section">
+      <section class="job section">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="job__list">
@@ -125,14 +127,32 @@
             <li class="job__item three"><img src="./images/img3.jpg" alt="" width="370" /></li>
           </ul>
         </div>
-      </section>-->
+      </section>
       <!-- Team -->
       <section class="team section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./images/img_igor.jpg" alt="Product Designer" width="270" />
+              <picture>
+                <source
+                  srcset="./images/igor-desk.jpg 1x, ./images/igor-desk-2x.jpg 2x"
+                  media="(min-width: 1200)"
+                />
+                <source
+                  srcset="./images/igor-tab.jpg 1x, ./images/igor-tab-2x.jpg 2x"
+                  media="(min-width: 768)"
+                />
+                <source
+                  srcset="./images/igor-mob.jpg 1x, ./images/igor-mob-2x.jpg 2x"
+                  media="(min-width: 320)"
+                />
+                <img
+                src="./images/img_igor.jpg"
+                alt="Product Designer"
+                width="450"
+              />
+              </picture>
               <div class="team__img">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__profession">Product Designer</p>
@@ -165,7 +185,25 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img_olga.jpg" alt="Frontend Developer" width="270" />
+              <picture>
+                <source
+                  srcset="./images/olga-desk.jpg 1x, ./images/olga-desk-2x.jpg 2x"
+                  media="(min-width: 1200)"
+                />
+                <source
+                  srcset="./images/olga-tab.jpg 1x, ./images/olga-tab-2x.jpg 2x"
+                  media="(min-width: 768)"
+                />
+                <source
+                  srcset="./images/olga-mob.jpg 1x, ./images/olga-mob-2x.jpg 2x"
+                  media="(min-width: 320)"
+                />
+                <img
+                src="./images/img_olga.jpg"
+                alt="Frontend Developer"
+                width="450"
+              />
+              </picture>
               <div class="team__img">
                 <h3 class="team__title">Ольга Рєпіна</h3>
                 <p class="team__profession">Frontend Developer</p>
@@ -198,7 +236,25 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img_mikola.jpg" alt="Marketing" width="270" />
+              <picture>
+                <source
+                  srcset="./images/mik-desk.jpg 1x, ./images/mik-desk-2x.jpg 2x"
+                  media="(min-width: 1200)"
+                />
+                <source
+                  srcset="./images/mik-tab.jpg 1x, ./images/mik-tab-2x.jpg 2x"
+                  media="(min-width: 768)"
+                />
+                <source
+                  srcset="./images/mik-mob.jpg 1x, ./images/mik-mob-2x.jpg 2x"
+                  media="(min-width: 320)"
+                />
+                <img
+                src="./images/img_mikola.jpg"
+                alt="Marketing"
+                width="450"
+              />
+              </picture>
               <div class="team__img">
                 <h3 class="team__title">Микола Тарасов</h3>
                 <p class="team__profession">Marketing</p>
@@ -231,7 +287,26 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img_michailo.jpg" alt="UI Designer" width="270" />
+              <picture>
+                <source
+                  srcset="./images/mih-desk.jpg 1x, ./images/mih-desk-2x.jpg 2x"
+                  media="(min-width: 1200)"
+                />
+                <source
+                  srcset="./images/mih-tab.jpg 1x, ./images/mih-tab-2x.jpg 2x"
+                  media="(min-width: 768)"
+                />
+                <source
+                  srcset="./images/mih-mob.jpg 1x, ./images/mih-mob-2x.jpg 2x"
+                  media="(min-width: 320)"
+                />
+                <img
+                srcset="./images/mih-desk.jpg 1x, ./images/mih-desk-2x.jpg 2x"
+                src="./images/img_michailo.jpg"
+                alt="UI Designer"
+                width="450"
+              />
+              </picture>
               <div class="team__img">
                 <h3 class="team__title">Михайло Єрмаков</h3>
                 <p class="team__profession">UI Designer</p>

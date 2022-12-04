@@ -1,6 +1,11 @@
 .job {
-  padding-top: 0;
-  padding-bottom: 94px;
+  display: none;
+  @include desktop {
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 94px;
+  }
+  
 }
 
 .job__list {
