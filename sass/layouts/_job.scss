@@ -1,50 +1,67 @@
 .job {
   display: none;
   @include desktop {
-    display: flex;
+    display: block;
     padding-top: 0;
     padding-bottom: 94px;
   }
-  
 }
 
 .job__list {
   display: flex;
   gap: 30px;
 }
-.job__item.one::before {
-  content: 'Десктопні додатки';
-  position: absolute;
-  width: 370px;
-  height: 70px;
-  padding-top: 27px;
-  top: 1422px;
-  text-transform: uppercase;
 
+.job__item {
+  min-width: 370px;
+}
+.job__thumb {
+  position: relative;
+}
+
+.job__label {
+  position: absolute;
+  width: 100%;
+  padding: 27px 0;
+  text-align: center;
+    text-transform: uppercase;
   color: var(--primary-white-color);
   background-color: rgba(47, 48, 58, 0.8);
+  transform: translateY(-100%);
 }
-.job__item.two::before {
-  content: 'Мобільні додатки';
-  position: absolute;
-  width: 370px;
-  height: 70px;
-  padding-top: 27px;
-  top: 1422px;
-  text-transform: uppercase;
+//.job__item.one::before {
+//  content: 'Десктопні додатки';
+//  position: absolute;
+//  width: 370px;
+//  height: 70px;
+//  padding-top: 27px;
+//  top: 1422px;
+//  text-transform: uppercase;
 
-  color: var(--primary-white-color);
-  background-color: rgba(47, 48, 58, 0.8);
-}
-.job__item.three::before {
-  content: 'Дизайнерські рішення';
-  position: absolute;
-  width: 370px;
-  height: 70px;
-  padding-top: 27px;
-  top: 1422px;
-  text-transform: uppercase;
+//  color: var(--primary-white-color);
+//  background-color: rgba(47, 48, 58, 0.8);
+//}
+//.job__item.two::before {
+//  content: 'Мобільні додатки';
+//  position: absolute;
+//  width: 370px;
+//  height: 70px;
+//  padding-top: 27px;
+//  top: 1422px;
+//  text-transform: uppercase;
 
-  color: var(--primary-white-color);
-  background-color: rgba(47, 48, 58, 0.8);
-}
+//  color: var(--primary-white-color);
+//  background-color: rgba(47, 48, 58, 0.8);
+//}
+//.job__item.three::before {
+//  content: 'Дизайнерські рішення';
+//  position: absolute;
+//  width: 370px;
+//  height: 70px;
+//  padding-top: 27px;
+//  top: 1422px;
+//  text-transform: uppercase;
+
+//  color: var(--primary-white-color);
+//  background-color: rgba(47, 48, 58, 0.8);
+//}
