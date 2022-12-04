@@ -32,7 +32,8 @@
               ><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a
             >
             <ul class="menu menu__list list">
-              <li class="menu__item"><a href="" class="menu__link current">Студія</a></li>
+              <li class="menu__item">
+                <a href="" class="menu__link current">Студія</a></li>
               <li class="menu__item">
                 <a href="./portfolio.html" class="menu__link">Портфоліо</a>
               </li>
@@ -42,14 +43,14 @@
           <ul class="contacts__list">
             <li class="contacts__item">
               <a href="mailto:info@devstudio.com" class="contacts__link">
-                <svg class="contacts-email-icon" width="16" height="12">
+                <svg class="contacts__icon contacts-email-icon" width="16" height="12">
                   <use href="./images/symbol-defs.svg#icon-envelope"></use></svg
                 >info@devstudio.com</a
               >
             </li>
             <li class="item">
               <a href="tel:+380961111111" class="contacts__link">
-                <svg class="contacts-tel-icon" width="10" height="16">
+                <svg class="contacts__icon contacts-tel-icon" width="10" height="16">
                   <use href="./images/symbol-defs.svg#icon-tel"></use></svg
                 >+38 096 111 11 11</a
               >
@@ -63,13 +64,13 @@
         </div>
         <div class="mob-menu is-hidden" data-menu>
           <button type="button" class="menu-close" data-menu-close>
-            <svg class="menu-close-icon" width="24" height="24">
+            <svg class="menu-close__icon" width="24" height="24">
               <use href="./images/symbol-defs.svg#icon-menu-close"></use>
             </svg>
           </button>
           <div class="mob-menu-container">
               <nav class="mob-menu-nav">
-                <ul class="mob-menu__list list">
+                <ul class="mob-menu__list">
                   <li class="mob-menu__item">
                     <a href="" class="mob-menu__link current">Студія</a>
                   </li>
@@ -81,11 +82,11 @@
               </nav>
             <div class="mob-menu-bottom">
               <ul class="mob-contacts__list">
-                <li class="mob-tel-contacts__item">
-                  <a href="tel:+380961111111" class="mob-contacts__link"> +38 096 111 11 11</a>
+                <li>
+                  <a href="tel:+380961111111" class="mob-contacts__link mob-contacts__list-tel"> +38 096 111 11 11</a>
                 </li>
                 <li class="mob-email-contacts__item">
-                  <a href="mailto:info@devstudio.com" class="mob-contacts__link">
+                  <a href="mailto:info@devstudio.com" class="mob-contacts__link mob-contacts__list-email">
                     info@devstudio.com</a
                   >
                 </li>
