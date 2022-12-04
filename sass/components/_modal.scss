@@ -21,15 +21,7 @@
 }
 
 
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  & .modal {
-    transform: translate(-50%, -50%) scale(0) rotate(-360deg);
-    border-radius: 70%;
-  }
-}
+
 .modal-title {
   font-weight: 700;
   font-size: 20px;
