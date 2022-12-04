@@ -534,26 +534,42 @@ section {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 0px;
+  padding-bottom: 60px;
   background-color: #2f303a;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero-title {
-  color: var(--primary-white-color);
+  padding-top: 118px;
   margin-bottom: 30px;
   margin-top: 0;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    margin-bottom: 30px;
+    margin-top: 0;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
 }
 
 .button.hero {
-  color: var(--secondary-text-color);
-  background-color: var(--color-btn-primery);
-  padding: 10px 32px;
+  padding: 10px 24px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -564,8 +580,25 @@ section {
   min-width: 73px;
   text-align: center;
   font-family: inherit;
+  color: var(--secondary-text-color);
+  background-color: var(--color-btn-primery);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color var(--trans), color var(--trans);
+}
+@media screen and (min-width: 1200px) {
+  .button.hero {
+    padding: 10px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    min-width: 73px;
+    text-align: center;
+    font-family: inherit;
+  }
 }
 .button.hero:hover, .button.hero:focus {
   color: var(--primary-text-color);
@@ -574,8 +607,8 @@ section {
 }
 
 .overlay {
-  height: 600px;
-  max-width: 1600px;
+  height: 400px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-hero.jpg);
@@ -584,16 +617,10 @@ section {
   background-size: cover;
   background-color: #c4c4c4;
 }
-
-.cardlist {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  text-align: center;
-}
 @media screen and (min-width: 1200px) {
-  .cardlist {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  .overlay {
+    height: 600px;
+    max-width: 1600px;
   }
 }
 
