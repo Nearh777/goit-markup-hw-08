@@ -14,17 +14,20 @@ ol {
   padding-left: 0;
   list-style: none;
 }
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+}
+
 address {
   font-style: normal;
 }
 
-a {
-  color: currentColor;
-  text-decoration: none;
-}
-section {
-  text-align: center;
-}
 img {
   display: block;
   max-width: 100%;
