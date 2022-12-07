@@ -1,23 +1,28 @@
-(() => {
-  const refs = {
-    openMenuBtn: document.querySelector('[data-menu-open]'),
-    closeMenuBtn: document.querySelector('[data-menu-close]'),
-    menu: document.querySelector('[data-menu]'),
-    body: document.querySelector('body'),
-    menuList: document.querySelector('.mob-menu-list'),
-  };
+( ( )  =>  {
+  const  mobileMenu  =  документ . querySelector ( '.js-menu-container' ) ;
+  const  openMenuBtn  =  документ . querySelector ( '.js-open-menu' ) ;
+  const  closeMenuBtn  =  документ . querySelector ( '.js-close-menu' ) ;
 
-  refs.openMenuBtn.addEventListener('click', toggleMenu);
-  refs.closeMenuBtn.addEventListener('click', toggleMenu);
-  refs.menuList.addEventListener('click', removeMenu);
+  const  toggleMenu  =  ( )  =>  {
+    const  isMenuOpen  =
+      openMenuBtn . getAttribute ( 'aria-expanded' )  ===  'true'  ||  false ;
+    openMenuBtn . setAttribute ( 'aria-expanded' ,  ! isMenuOpen ) ;
+    mobileMenu . classList . перемикати ( 'відкрито' ) ;
 
-  function toggleMenu() {
-    refs.menu.classList.toggle('is-hidden');
-    refs.body.classList.toggle('no-scroll');
-  }
+    const  scrollLockMethod  =  ! isMenuOpen
+      ? 'disableBodyScroll'
+      : 'enableBodyScroll' ;
+    bodyScrollLock [ scrollLockMethod ] ( document.body ) ; _ _
+  } ;
 
-  function removeMenu() {
-    refs.menu.classList.add('is-hidden');
-    refs.body.classList.remove('no-scroll');
-  }
-})();
+  openMenuBtn . addEventListener ( 'клацання' ,  toggleMenu ) ;
+  closeMenuBtn . addEventListener ( 'клацання' ,  toggleMenu ) ;
+
+  // Закривати мобільне меню на широких екранах, якщо орієнтація пристрою змінюється
+  вікно . matchMedia ( '(мін. ширина: 768 пікселів)' ) . addEventListener ( 'змінити' ,  e  =>  {
+    if  ( ! e . matches )  return ;
+    mobileMenu . classList . видалити ( 'is-open' ) ;
+    openMenuBtn . setAttribute ( 'aria-expanded' ,  false ) ;
+    bodyScrollLock . enableBodyScroll ( document.body ) ; _ _
+  } ) ;
+} ) ( ) ;
